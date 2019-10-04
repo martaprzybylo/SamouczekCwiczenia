@@ -12,7 +12,7 @@ public class NumberSplit {
     }
 
     private void reversInput(int number) {
-        String num = " " + number;
+        String num = "" + number;
         char [] charArray = num.toCharArray();
 
         for (int i = charArray.length-1; i>=0; i-- ){

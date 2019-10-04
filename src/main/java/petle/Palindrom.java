@@ -42,6 +42,4 @@ public class Palindrom {
         System.out.println("Podaj dowolny wyraz lub zdanie, a ja sprawdzê, czy jest PALINDROMEM :) ");
         userInput = scanner.nextLine();
     }
-
-
 }

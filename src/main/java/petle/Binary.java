@@ -13,19 +13,20 @@ public class Binary {
         binary.printBinary(number);
         System.out.println("************************************");
         System.out.print("Postaæ binarna podanej liczby to: ");
-        System.out.print(binary.printBinaryOtherWay(number));
+        binary.printBinaryOtherWay(number);
     }
 
-    private char [] printBinaryOtherWay(int number) {
-
+    private void printBinaryOtherWay(int number) {
+        binaryNumber = "";
         while (number>0){
-            binaryNumber = "" + number%2;
+            binaryNumber += number%2;
             number/=2;
         }
         array = binaryNumber.toCharArray();
         for (int i = array.length-1; i>=0;i--){
+            System.out.print(array[i]);
         }
-        return array;
+
     }
 
     private void printBinary(int number) {
